@@ -5,9 +5,325 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+      <!-- FONTS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap"
+         rel="stylesheet"
+      />
+
+      <!-- ICONS -->
+      <script src="https://kit.fontawesome.com/a2c234ef4d.js" crossorigin="anonymous"></script>
       <!-- STYLES/CSS files -->
-      <link rel="stylesheet" href="#" />
+      <link rel="stylesheet" href="./output.css" />
       <title>Memekar Store</title>
    </head>
-   <body></body>
+   <body>
+      <!-- Header Contents -->
+      <header>
+         <!-- Top Bar -->
+         <div class="bg-zinc-800">
+            <div class="container text-center">
+               <span class="py-2 block text-white"> ⚡️ आमच्या सारखे आम्हीच ⚡️ </span>
+            </div>
+         </div>
+
+         <!-- Navbar / Navigation Menu -->
+         <nav class="bg-primary_clr">
+            <div class="container">
+               <div class="nav_content">
+                  <div class="left_content hidden lg:block">
+                     <a href="#home" class="nav_link">Home</a>
+                     <a href="#shop" class="nav_link">Shop</a>
+                     <a href="#collab" class="nav_link">Collab <i class="fas fa-angle-down"></i> </a>
+                  </div>
+                  <div class="middle_content">
+                     <div class="nav_logo w-24">
+                        <img src="./img/logo.png" class="block" alt="LOGO" />
+                     </div>
+                  </div>
+                  <div class="last_content hidden lg:block">
+                     <div class="flex justify-between items-center">
+                        <a href="#login" class="nav_link">Login</a>
+                        <a href="#signup" class="nav_link">Signup</a>
+                        <div class="nav_icons ml-4">
+                           <a href="#" class="nav_link"><i class="fas fa-search"></i></a>
+                           <a href="#" class="nav_link"><i class="fas fa-heart"></i></a>
+                           <a href="#" class="nav_link"> <i class="fas fa-shopping-cart"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Mobile Menu Button -->
+                  <div class="lg:hidden text-3xl font-bold">
+                     <span
+                        class="cursor-pointer menu-button hover:text-text-green transition-all duration-300 focus:text-text-green"
+                        >&#9776;</span
+                     >
+                  </div>
+               </div>
+            </div>
+         </nav>
+
+         <div class="header_banner">
+            <div class="banner_img w-full">
+               <img src="./img/banner.jpg" alt="Banner" />
+            </div>
+         </div>
+      </header>
+      <main>
+         <!-- Category Section -->
+         <section class="p-4">
+            <div class="category_content_layout">
+               <div class="category_card relative">
+                  <div class="card_img">
+                     <img src="./img/category1.jpg" alt="T-Shirt" />
+                  </div>
+                  <div class="card_tag absolute top-4 left-4">
+                     <div class="tag bg-primary_clr px-4 py-1 rounded-lg">
+                        <span class="text-lg font-semibold">T-Shirts</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="category_card relative">
+                  <div class="card_img">
+                     <img src="./img/category2.jpg" alt="Stickers" />
+                  </div>
+                  <div class="card_tag absolute top-4 left-4">
+                     <div class="tag bg-primary_clr px-4 py-1 rounded-lg">
+                        <span class="text-lg font-semibold">Stickers</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="category_card relative">
+                  <div class="card_img">
+                     <img src="./img/category3.jpg" alt="T-Shirt" />
+                  </div>
+                  <div class="card_tag absolute top-4 left-4">
+                     <div class="tag bg-primary_clr px-4 py-1 rounded-lg">
+                        <span class="text-lg font-semibold">Badges</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="category_card relative">
+                  <div class="card_img">
+                     <img src="./img/category2.jpg" alt="Stickers" />
+                  </div>
+                  <div class="card_tag absolute top-4 left-4">
+                     <div class="tag bg-primary_clr px-4 py-1 rounded-lg">
+                        <span class="text-lg font-semibold">Stickers</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="category_card relative">
+                  <div class="card_img">
+                     <img src="./img/category3.jpg" alt="T-Shirt" />
+                  </div>
+                  <div class="card_tag absolute top-4 left-4">
+                     <div class="tag bg-primary_clr px-4 py-1 rounded-lg">
+                        <span class="text-lg font-semibold">Badges</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="category_card relative">
+                  <div class="card_img">
+                     <img src="./img/category1.jpg" alt="T-Shirt" />
+                  </div>
+                  <div class="card_tag absolute top-4 left-4">
+                     <div class="tag bg-primary_clr px-4 py-1 rounded-lg">
+                        <span class="text-lg font-semibold">T-Shirts</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Featured Section -->
+         <section class="py-4">
+            <div class="container">
+               <div class="title">
+                  <h1>Featured</h1>
+               </div>
+               <div class="featured_content_layout">
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product1.png" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
+                  </div>
+
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product2.jpg" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
+                  </div>
+
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product3.jpg" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
+                  </div>
+
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product4.jpg" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
+                  </div>
+
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product3.jpg" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
+                  </div>
+
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product1.png" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
+                  </div>
+
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product2.jpg" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!-- FOOTER SECTION -->
+      <footer class="bg-zinc-800 mt-12">
+         <div class="container my-4 pt-16">
+            <div class="f_content px-10 flex flex-col space-y-4 items-center">
+               <div class="f_logo w-36">
+                  <img src="./img/logo_white.png" alt="" />
+               </div>
+               <div class="f_links text-gray-300">
+                  <a href="#" class="f_link">Contact Us</a>
+                  <a href="#" class="f_link">Terms And Privacy Policy</a>
+                  <a href="#" class="f_link">Shipping & Tracking</a>
+                  <a href="#" class="f_link">Size Guide</a>
+                  <a href="#" class="f_link">Return & Replacement</a>
+                  <a href="#" class="f_link">Our Story </a>
+               </div>
+               <div class="f_icons text-gray-300">
+                  <a href="#" class="f_link"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="f_link"><i class="fab fa-instagram"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="f_last border-t-[1px] border-zinc-700">
+            <div
+               class="container py-6 flex flex-col space-y-4 items-center justify-center lg:flex-row lg:space-y-0 lg:justify-between"
+            >
+               <p class="text-gray-500 text-sm">© 2020 Memekar. Media. — Store -- All rights reserved</p>
+               <div class="payment_icons flex space-x-2">
+                  <a href="#">
+                     <img src="./img/mastercard.svg" alt="" />
+                  </a>
+
+                  <a href="#">
+                     <img src="./img/visa.svg" alt="" />
+                  </a>
+
+                  <a href="#">
+                     <img src="./img/amex.svg" alt="" />
+                  </a>
+
+                  <a href="#">
+                     <img src="./img/paypal.svg" alt="" />
+                  </a>
+                  <a href="#">
+                     <img src="./img/maestro.svg" alt="" />
+                  </a>
+                  <a href="#">
+                     <img src="./img/klarna.svg" alt="" />
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
 </html>
