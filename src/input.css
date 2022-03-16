@@ -1,30 +1,41 @@
+@font-face {
+   font-family: "proxima-semi-bold";
+   src: url(../public/fonts/Proxima\ Nova\ Semibold.ttf);
+}
+
 @tailwind base;
-html,
-body {
-   font-family: "Jost", sans-serif;
-}
-
-/* Components */
 @tailwind components;
-
-/* Common Components */
-.title {
-   @apply text-4xl text-center p-2 font-semibold;
-}
-
-.f_link {
-   @apply text-lg p-1;
-}
 @tailwind utilities;
 
-/* CUSTOM DESIGNS */
+/* BASE Layer Custom Designs */
+@layer base {
+   html,
+   body {
+      font-family: "proxima-semi-bold", system-ui, sans-serif;
+   }
+}
+
+/* Components  Layer Custom Design*/
+@layer components {
+   /* Common Components */
+   .title {
+      @apply text-4xl text-center p-2 font-semibold;
+   }
+
+   .f_link {
+      @apply text-lg p-1;
+   }
+   /* ... */
+}
+
+/* CUSTOM classes & DESIGNS */
 /* Navbar Design */
 .nav_content {
-   @apply flex justify-between items-center py-4 text-xl font-semibold;
+   @apply flex justify-between items-center py-4 text-lg font-semibold;
 }
 
 .nav_link {
-   @apply p-2 uppercase;
+   @apply m-2 uppercase transition-all duration-300 hover:text-red-700 hover:border-b-2 hover:border-red-700;
 }
 
 .f_links {

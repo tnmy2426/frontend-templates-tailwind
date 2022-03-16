@@ -1,0 +1,5 @@
+- Proxima Nova Semibold font added which is free but requires license for
+commercial usage.
+- Paralucent & Proxima Semibold font used on reference website, and those fonts
+premier fonts, have to buy those fonts to use.
+ 

@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "proxima-semi-bold";
+
+  src: url(../public/fonts/Proxima\ Nova\ Semibold.ttf);
+}
+
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
@@ -423,6 +429,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+html,
+   body {
+  font-family: "proxima-semi-bold", system-ui, sans-serif;
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -467,13 +478,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-
-html,
-body {
-  font-family: "Jost", sans-serif;
-}
-
-/* Components */
 
 .container {
   width: 100%;
@@ -539,6 +543,8 @@ body {
   line-height: 1.75rem;
 }
 
+/* ... */
+
 .absolute {
   position: absolute;
 }
@@ -581,12 +587,20 @@ body {
   margin-top: 3rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
 }
 
 .flex {
   display: flex;
+}
+
+.contents {
+  display: contents;
 }
 
 .hidden {
@@ -647,8 +661,21 @@ body {
   border-radius: 0.5rem;
 }
 
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
 .border-t-\[1px\] {
   border-top-width: 1px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-zinc-700 {
@@ -656,18 +683,27 @@ body {
   border-color: rgb(63 63 70 / var(--tw-border-opacity));
 }
 
-.bg-zinc-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
-}
-
 .bg-primary_clr {
   --tw-bg-opacity: 1;
   background-color: rgb(247 208 49 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
 .p-4 {
   padding: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .py-2 {
@@ -744,11 +780,6 @@ body {
   font-weight: 500;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -779,7 +810,11 @@ body {
   transition-duration: 300ms;
 }
 
-/* CUSTOM DESIGNS */
+/* BASE Layer Custom Designs */
+
+/* Components  Layer Custom Design*/
+
+/* CUSTOM classes & DESIGNS */
 
 /* Navbar Design */
 
@@ -789,14 +824,25 @@ body {
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 600;
 }
 
 .nav_link {
-  padding: 0.5rem;
+  margin: 0.5rem;
   text-transform: uppercase;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.nav_link:hover {
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(185 28 28 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 .f_links {
@@ -904,6 +950,11 @@ body {
   .featured_content_layout {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+}
+
+.hover\:text-red-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
