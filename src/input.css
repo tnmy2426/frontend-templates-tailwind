@@ -22,6 +22,30 @@
       @apply text-4xl text-center p-2 font-semibold;
    }
 
+   .card {
+      @apply cursor-pointer transition-all duration-300 hover:shadow-2xl relative;
+   }
+   .card_img {
+      @apply w-full object-cover transition-all duration-300 hover:transform;
+   }
+
+   .card_body {
+      @apply flex flex-col space-y-1 p-4;
+   }
+
+   .add_to_cart_snippet {
+      @apply bg-primary_clr border-4 border-white w-10 h-10 rounded-full absolute -top-4 -right-4 flex items-center justify-center
+      transition-all duration-300 hover:transform hover:scale-125 z-50;
+   }
+
+   .ratings {
+      @apply flex items-center space-x-1;
+   }
+
+   .price {
+      @apply flex font-semibold;
+   }
+
    .f_link {
       @apply text-lg p-1;
    }
@@ -30,33 +54,82 @@
       @apply py-2 px-3 transition-all duration-300 hover:text-red-600 hover:border-b-2 hover:border-red-600;
    }
 
-   .page {
-      @apply border-black px-4 py-1 cursor-pointer;
+   .pagination {
+      @apply flex justify-center space-x-4;
    }
-   /* ... */
+   .paging {
+      @apply border-2 border-black px-4 py-1 cursor-pointer;
+   }
 }
 
 /* CUSTOM classes & DESIGNS */
+.top_bar {
+   @apply bg-primary_clr text-center py-2;
+}
+/* Navbar Design */
 /* Navbar Design */
 .nav_content {
    @apply flex justify-between items-center py-4 text-lg font-semibold;
 }
 
+.primary_links {
+   @apply hidden items-center lg:flex;
+}
+
+.secondary_liks {
+   @apply hidden lg:flex items-center;
+}
+
+.cart_icon {
+   @apply relative w-5;
+}
+.cart_tag {
+   @apply bg-red-600 w-5 h-5 rounded-full absolute -top-3 -right-3 flex justify-center items-center;
+}
+
 .nav_link {
-   @apply m-2 uppercase transition-all duration-300 hover:text-red-700 hover:border-b-2 hover:border-red-700;
+   @apply m-2 uppercase transition-all duration-300 hover:text-red-600 hover:border-b-2 hover:border-red-600;
+}
+
+/* Category Section */
+.category_content_layout {
+   @apply py-8 grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-x-6 md:gap-y-6 lg:grid-cols-3;
+}
+
+.category_card {
+   @apply cursor-pointer relative transition-all duration-300 hover:transform hover:translate-x-1 hover:-translate-y-1 hover:shadow-2xl;
+}
+
+.catergory_card_tag {
+   @apply absolute top-4 left-4 bg-primary_clr px-4 py-1 rounded-lg text-lg font-semibold;
+}
+
+/* Featured Section */
+.featured_content_layout {
+   @apply mt-8 grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 xl:grid-cols-4;
+}
+
+/* Footer Designs */
+.f_content {
+   @apply px-10 flex flex-col space-y-4 items-center;
+}
+
+.f_logo {
+   @apply w-36 object-cover;
 }
 
 .f_links {
    @apply flex flex-col space-y-2 items-center lg:flex-row lg:space-x-2 lg:space-y-0 xl:space-x-4 2xl:space-x-5;
 }
 
-/* Category Section */
-
-.category_content_layout {
-   @apply grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-x-4 md:gap-y-3 xl:grid-cols-3;
+.f_link {
+   @apply text-lg p-1 font-semibold;
 }
 
-/* Featured Section */
-.featured_content_layout {
-   @apply mt-8 grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-8 lg:grid-cols-3 xl:grid-cols-4;
+.f_last {
+   @apply py-6 flex flex-col space-y-4 items-center justify-center lg:flex-row lg:space-y-0 lg:justify-between;
+}
+
+.payment_icons {
+   @apply flex flex-row space-x-2;
 }

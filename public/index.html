@@ -15,31 +15,30 @@
       <!-- Header Contents -->
       <header>
          <!-- Top Bar -->
-         <div class="bg-primary_clr">
-            <div class="container text-center">
-               <span class="py-2 block"> ⚡️ आमच्या सारखे आम्हीच ⚡️ </span>
-            </div>
+         <div class="top_bar">
+            <span> ⚡️ आमच्या सारखे आम्हीच ⚡️ </span>
          </div>
 
          <!-- Navbar / Navigation Menu -->
          <nav class="bg-white border-t-2 border-b-2 border-black">
             <div class="container">
                <div class="nav_content">
+                  <div class="left_content hidden lg:block">
+                     <a href="./index.html" class="nav_link">Home</a>
+                     <a href="./shop.html" class="nav_link">Shop</a>
+                     <a href="./colab.html" class="nav_link">Collab <i class="fas fa-angle-down"></i> </a>
+                  </div>
+
                   <div class="middle_content">
                      <div class="nav_logo w-24">
                         <img src="./img/logo.png" class="block" alt="LOGO" />
                      </div>
                   </div>
-                  <div class="left_content hidden lg:block">
-                     <a href="./index.html" class="nav_link">Home</a>
-                     <a href="./shop.html" class="nav_link">Shop</a>
-                     <a href="./colab.html" class="nav_link">Collab <i class="fas fa-angle-down"></i> </a>
-                     <a href="#login" class="nav_link">Login</a>
-                     <a href="#signup" class="nav_link">Signup</a>
-                  </div>
 
                   <div class="last_content hidden lg:block">
                      <div class="nav_icons ml-4">
+                        <a href="#login" class="nav_link">Login</a>
+                        <a href="#signup" class="nav_link">Signup</a>
                         <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-search"></i></a>
                         <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-heart"></i></a>
                         <a href="#" class="p-2 hover:text-red-700"> <i class="fas fa-shopping-cart"></i></a>
@@ -67,70 +66,49 @@
       <main>
          <!-- Category Section -->
          <section class="p-4">
-            <div class="category_content_layout">
+            <div class="category_content_layout container">
                <div class="category_card relative">
                   <div class="card_img">
                      <img src="./img/category1.jpg" alt="T-Shirt" />
                   </div>
-                  <div class="card_tag absolute top-4 left-4">
-                     <div class="tag bg-primary_clr px-4 py-1 rounded-lg">
-                        <span class="text-lg font-semibold">T-Shirts</span>
-                     </div>
+                  <div class="catergory_card_tag">
+                     <span class="">T-Shirts</span>
                   </div>
                </div>
 
                <div class="category_card relative">
                   <div class="card_img">
-                     <img src="./img/category2.jpg" alt="Stickers" />
+                     <img src="./img/category2.jpg" alt="Stickes" />
                   </div>
-                  <div class="card_tag absolute top-4 left-4">
-                     <div class="tag bg-primary_clr px-4 py-1 rounded-lg">
-                        <span class="text-lg font-semibold">Stickers</span>
-                     </div>
+                  <div class="catergory_card_tag">
+                     <span class="">Stickes</span>
                   </div>
                </div>
 
                <div class="category_card relative">
                   <div class="card_img">
-                     <img src="./img/category3.jpg" alt="T-Shirt" />
+                     <img src="./img/category3.jpg" alt="Badges" />
                   </div>
-                  <div class="card_tag absolute top-4 left-4">
-                     <div class="tag bg-primary_clr px-4 py-1 rounded-lg">
-                        <span class="text-lg font-semibold">Badges</span>
-                     </div>
+                  <div class="catergory_card_tag">
+                     <span class="">Badges</span>
                   </div>
                </div>
 
                <div class="category_card relative">
                   <div class="card_img">
-                     <img src="./img/category2.jpg" alt="Stickers" />
+                     <img src="./img/category3.jpg" alt="Badges" />
                   </div>
-                  <div class="card_tag absolute top-4 left-4">
-                     <div class="tag bg-primary_clr px-4 py-1 rounded-lg">
-                        <span class="text-lg font-semibold">Stickers</span>
-                     </div>
+                  <div class="catergory_card_tag">
+                     <span class="">Badges</span>
                   </div>
                </div>
 
                <div class="category_card relative">
                   <div class="card_img">
-                     <img src="./img/category3.jpg" alt="T-Shirt" />
+                     <img src="./img/category2.jpg" alt="Stickes" />
                   </div>
-                  <div class="card_tag absolute top-4 left-4">
-                     <div class="tag bg-primary_clr px-4 py-1 rounded-lg">
-                        <span class="text-lg font-semibold">Badges</span>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="category_card relative">
-                  <div class="card_img">
-                     <img src="./img/category1.jpg" alt="T-Shirt" />
-                  </div>
-                  <div class="card_tag absolute top-4 left-4">
-                     <div class="tag bg-primary_clr px-4 py-1 rounded-lg">
-                        <span class="text-lg font-semibold">T-Shirts</span>
-                     </div>
+                  <div class="catergory_card_tag">
+                     <span class="">Stickes</span>
                   </div>
                </div>
             </div>
@@ -268,7 +246,7 @@
 
       <!-- FOOTER SECTION -->
       <footer class="bg-zinc-800 mt-12">
-         <div class="container my-4 pt-16">
+         <div class="container py-14">
             <div class="f_content px-10 flex flex-col space-y-4 items-center">
                <div class="f_logo w-36">
                   <img src="./img/logo_white.png" alt="" />
@@ -289,7 +267,7 @@
          </div>
          <div class="f_last border-t-[1px] border-zinc-700">
             <div
-               class="container py-6 flex flex-col space-y-4 items-center justify-center lg:flex-row lg:space-y-0 lg:justify-between"
+               class="container flex flex-col space-y-4 items-center justify-center lg:flex-row lg:space-y-0 lg:justify-between"
             >
                <p class="text-gray-500 text-sm">© 2020 Memekar. Media. — Store -- All rights reserved</p>
                <div class="payment_icons flex space-x-2">
