@@ -91,6 +91,13 @@
    @apply m-2 uppercase transition-all duration-300 hover:text-red-600 hover:border-b-2 hover:border-red-600;
 }
 
+.sticky_nav {
+   @apply fixed top-0 w-full z-50;
+}
+
+.main_content {
+   @apply mt-24;
+}
 /* Category Section */
 .category_content_layout {
    @apply py-8 grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-x-6 md:gap-y-6 lg:grid-cols-3;

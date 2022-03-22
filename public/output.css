@@ -747,10 +747,6 @@ html,
   width: 100%;
 }
 
-.w-4 {
-  width: 1rem;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -914,11 +910,6 @@ html,
   line-height: 1.25rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -944,11 +935,6 @@ html,
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -1071,6 +1057,17 @@ html,
   border-color: rgb(220 38 38 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
+.sticky_nav {
+  position: fixed;
+  top: 0px;
+  z-index: 50;
+  width: 100%;
+}
+
+.main_content {
+  margin-top: 6rem;
 }
 
 /* Category Section */
