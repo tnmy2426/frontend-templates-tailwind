@@ -13,7 +13,7 @@
    </head>
    <body>
       <!-- Header Contents -->
-      <header>
+      <header id="header">
          <!-- Top Bar -->
          <div class="top_bar">
             <span> ⚡️ आमच्या सारखे आम्हीच ⚡️ </span>
@@ -21,35 +21,48 @@
 
          <!-- Navbar / Navigation Menu -->
          <nav class="bg-white border-t-2 border-b-2 border-black">
-            <div class="container">
-               <div class="nav_content">
-                  <div class="left_content hidden lg:block">
-                     <a href="./index.html" class="nav_link">Home</a>
-                     <a href="./shop.html" class="nav_link">Shop</a>
-                     <a href="./colab.html" class="nav_link">Collab <i class="fas fa-angle-down"></i> </a>
-                  </div>
+            <div class="container nav_content">
+               <div class="left_content hidden lg:block">
+                  <a href="#header" class="nav_link active_link">Home</a>
+                  <a href="#featured" class="nav_link">Shop</a>
+                  <a href="./colab.html" class="nav_link">Collab <i class="fas fa-angle-down"></i> </a>
+               </div>
 
-                  <div class="middle_content">
-                     <div class="nav_logo w-24">
-                        <img src="./img/logo.png" class="block" alt="LOGO" />
-                     </div>
+               <div class="middle_content">
+                  <div class="nav_logo w-24">
+                     <img src="./img/logo.png" class="block" alt="LOGO" />
                   </div>
+               </div>
 
-                  <div class="last_content hidden lg:block">
-                     <div class="nav_icons ml-4">
-                        <a href="#login" class="nav_link">Login</a>
-                        <a href="#signup" class="nav_link">Signup</a>
-                        <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-search"></i></a>
-                        <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-heart"></i></a>
-                        <a href="#" class="p-2 hover:text-red-700"> <i class="fas fa-shopping-cart"></i></a>
-                     </div>
+               <div class="last_content hidden lg:block">
+                  <div class="nav_icons ml-4">
+                     <a href="#login" class="nav_link">Login</a>
+                     <a href="#signup" class="nav_link">Signup</a>
+                     <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-search"></i></a>
+                     <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-heart"></i></a>
+                     <a href="#" class="p-2 hover:text-red-700"> <i class="fas fa-shopping-cart"></i></a>
                   </div>
-                  <!-- Mobile Menu Button -->
-                  <div class="lg:hidden text-3xl font-bold">
-                     <span
-                        class="cursor-pointer menu-button hover:text-text-green transition-all duration-300 focus:text-text-green"
-                        >&#9776;</span
-                     >
+               </div>
+               <!-- Mobile Menu Button -->
+               <div class="lg:hidden menu_btns">
+                  <span
+                     id="menu_btn"
+                     onclick="openNav()"
+                     class="cursor-pointer hover:text-text-green transition-all duration-300 focus:text-text-green"
+                     >&#9776;
+                  </span>
+                  <a href="javascript:void(0)" onclick="closeNav()" id="cross_btn" class="text-5xl hidden">&times;</a>
+               </div>
+
+               <!--Mobile menu content-->
+               <div class="overlay" id="mobileNav">
+                  <div class="overlay_content">
+                     <a onclick="closeNav()" class="nav_link" href="#header">Home</a>
+                     <a onclick="closeNav()" class="nav_link" href="#featured">Shop</a>
+                     <a onclick="closeNav()" class="nav_link" href="#team">Collab</a>
+                     <a onclick="closeNav()" class="nav_link" href="#skill">Login</a>
+                     <a onclick="closeNav()" class="nav_link" href="#portfolio">Signup</a>
+                     <a onclick="closeNav()" class="nav_link" href="#testimonial"><i class="fas fa-shopping-cart"></i></a>
                   </div>
                </div>
             </div>
@@ -114,7 +127,7 @@
          </section>
 
          <!-- Featured Section -->
-         <section class="py-4">
+         <section id="featured" class="py-4">
             <div class="container">
                <div class="title">
                   <h1>Featured</h1>

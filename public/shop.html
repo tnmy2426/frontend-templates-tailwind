@@ -23,35 +23,33 @@
 
          <!-- Navbar / Navigation Menu -->
          <nav class="bg-white border-t-2 border-b-2 border-black">
-            <div class="container">
-               <div class="nav_content">
-                  <div class="middle_content">
-                     <div class="nav_logo w-24">
-                        <img src="./img/logo.png" class="block" alt="LOGO" />
-                     </div>
+            <div class="container nav_content">
+               <div class="left_content hidden lg:block">
+                  <a href="./index.html" class="nav_link active_link">Home</a>
+                  <a href="./shop.html" class="nav_link">Shop</a>
+                  <a href="./colab.html" class="nav_link">Collab <i class="fas fa-angle-down"></i> </a>
+               </div>
+
+               <div class="middle_content">
+                  <div class="nav_logo w-24">
+                     <img src="./img/logo.png" class="block" alt="LOGO" />
                   </div>
-                  <div class="left_content hidden lg:block">
-                     <a href="./index.html" class="nav_link">Home</a>
-                     <a href="./shop.html" class="nav_link">Shop</a>
-                     <a href="./colab.html" class="nav_link">Collab <i class="fas fa-angle-down"></i> </a>
+               </div>
+
+               <div class="last_content hidden lg:block">
+                  <div class="nav_icons ml-4">
                      <a href="#login" class="nav_link">Login</a>
                      <a href="#signup" class="nav_link">Signup</a>
+                     <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-search"></i></a>
+                     <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-heart"></i></a>
+                     <a href="#" class="p-2 hover:text-red-700"> <i class="fas fa-shopping-cart"></i></a>
                   </div>
-
-                  <div class="last_content hidden lg:block">
-                     <div class="nav_icons ml-4">
-                        <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-search"></i></a>
-                        <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-heart"></i></a>
-                        <a href="#" class="p-2 hover:text-red-700"> <i class="fas fa-shopping-cart"></i></a>
-                     </div>
-                  </div>
-                  <!-- Mobile Menu Button -->
-                  <div class="lg:hidden text-3xl font-bold">
-                     <span
-                        class="cursor-pointer menu-button hover:text-text-green transition-all duration-300 focus:text-text-green"
-                        >&#9776;</span
-                     >
-                  </div>
+               </div>
+               <!-- Mobile Menu Button -->
+               <div class="lg:hidden text-3xl font-bold">
+                  <span class="cursor-pointer menu-button hover:text-text-green transition-all duration-300 focus:text-text-green"
+                     >&#9776;</span
+                  >
                </div>
             </div>
          </nav>
@@ -328,5 +326,8 @@
             </div>
          </div>
       </footer>
+
+      <!-- JS -->
+      <script src="./main.js"></script>
    </body>
 </html>

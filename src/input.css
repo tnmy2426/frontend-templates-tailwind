@@ -12,6 +12,7 @@
    html,
    body {
       font-family: "proxima-semi-bold", system-ui, sans-serif;
+      scroll-behavior: smooth;
    }
 }
 
@@ -91,10 +92,31 @@
    @apply m-2 uppercase transition-all duration-300 hover:text-red-600 hover:border-b-2 hover:border-red-600;
 }
 
+.active_link {
+   @apply text-red-600;
+}
+
 .sticky_nav {
    @apply fixed top-0 w-full z-50;
 }
 
+/* Mobile-Nav */
+.overlay {
+   @apply w-0 h-full fixed bg-primary_clr top-[134px] left-0 z-50 transition-all duration-500 overflow-x-hidden;
+}
+.overlay_scroll {
+   @apply w-0 h-full fixed bg-primary_clr top-[94px] left-0 z-50 transition-all duration-500 overflow-x-hidden;
+}
+
+.overlay_content {
+   @apply pl-4 relative w-full mt-10 flex flex-col space-y-5 text-2xl;
+}
+
+.menu_btns {
+   @apply text-3xl font-bold flex items-center;
+}
+
+/* Main Contnet */
 .main_content {
    @apply mt-24;
 }
