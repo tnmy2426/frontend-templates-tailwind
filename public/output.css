@@ -911,19 +911,9 @@ html,
   line-height: 1.25rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .font-bold {
@@ -984,11 +974,11 @@ html,
   transition-duration: 300ms;
 }
 
-/* BASE Layer Custom Designs */
+/*---------------------------------------- BASE Layer Custom Designs--------------------- */
 
-/* Components  Layer Custom Design*/
+/*---------------------------------------- Components  Layer Custom Design-----------------------------------*/
 
-/* CUSTOM classes & DESIGNS */
+/*------------------------------------ CUSTOM classes------------------------ & DESIGNS */
 
 .top_bar {
   --tw-bg-opacity: 1;
@@ -998,9 +988,7 @@ html,
   text-align: center;
 }
 
-/* Navbar Design */
-
-/* Navbar Design */
+/*------------- Navbar Design------------ */
 
 .nav_content {
   display: flex;
@@ -1088,7 +1076,7 @@ html,
   position: fixed;
   top: 134px;
   left: 0px;
-  z-index: 50;
+  z-index: 40;
   height: 100%;
   width: 0px;
   overflow-x: hidden;
@@ -1103,7 +1091,7 @@ html,
   position: fixed;
   top: 94px;
   left: 0px;
-  z-index: 50;
+  z-index: 40;
   height: 100%;
   width: 0px;
   overflow-x: hidden;
@@ -1129,7 +1117,6 @@ html,
 }
 
 .overlay_content {
-  padding-left: 1rem;
   font-size: 1.5rem;
   line-height: 2rem;
 }
@@ -1142,13 +1129,13 @@ html,
   font-weight: 700;
 }
 
-/* Main Contnet */
+/*---------------------- Main Contnet --------------------- */
 
 .main_content {
   margin-top: 6rem;
 }
 
-/* Category Section */
+/*--------------------- Category Section ----------------------*/
 
 .category_content_layout {
   display: grid;
@@ -1212,7 +1199,7 @@ html,
   font-weight: 600;
 }
 
-/* Featured Section */
+/*------------------------- Featured Section --------------------*/
 
 .featured_content_layout {
   margin-top: 2rem;
@@ -1244,7 +1231,7 @@ html,
   }
 }
 
-/* Footer Designs */
+/*---------------------------- Footer Designs ---------------------*/
 
 .f_content {
   display: flex;

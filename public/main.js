@@ -1,11 +1,11 @@
-// --------------- Sticky Nav -----------------
+// -------------------------- Sticky Nav ------------------------
 window.onscroll = function () {
    myFunction();
 };
 
 var navbar = document.querySelector("nav");
 var content = document.querySelector("main");
-var overlay = document.getElementById("mobileNav");
+var mobNav = document.getElementById("mobileNav");
 //  var footer = document.querySelector("footer");
 
 // Get the offset position of the navbar
@@ -17,17 +17,18 @@ function myFunction() {
       navbar.classList.add("sticky_nav");
       content.classList.add("main_content");
 
-      overlay.classList.remove("overlay");
-      overlay.classList.add("overlay_scroll");
+      // mobNav.classList.remove("overlay");
+      mobNav.classList.add("overlay_scroll");
       //    footer.classList.add("footer_c");
    } else {
       navbar.classList.remove("sticky_nav");
       content.classList.remove("main_content");
+      mobNav.classList.remove("overlay_scroll");
       //    footer.classList.remove("footer_c");
    }
 }
 
-// ACTIVE LINK
+// ------------------- ACTIVE Nav LINK ------------------
 
 // Get the container element
 var nav = document.querySelector("nav");
@@ -44,7 +45,7 @@ for (var i = 0; i < nav_links.length; i++) {
    });
 }
 
-// Mobile Menu Function
+// ----------------- Mobile Menu Function --------------
 function openNav() {
    document.getElementById("mobileNav").style.width = "80%";
    document.getElementById("menu_btn").style.display = "none";
