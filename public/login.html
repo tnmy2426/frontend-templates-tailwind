@@ -71,55 +71,43 @@
 
       <!-- Main contents / page contents -->
       <main>
-         <!-- Featured Section -->
+         <!-- Login Section -->
          <section class="py-4">
             <div class="container">
-               <div class="flex flex-col sm:mx-auto max-w-[450px]">
-                  <div class="w-full pt-8">
-                     <h2 class="text-5xl">Login</h2>
+               <div class="auth_page_content">
+                  <div class="page_title">
+                     <h2>Login</h2>
                   </div>
-                  <div class="login_form pt-8">
+                  <div class="form_container">
                      <form action="#" method="post">
-                        <div class="input_container flex flex-col space-y-8">
-                           <div class="form_input flex flex-col space-y-2">
-                              <label for="email" class="text-lg font-semibold">Email Address</label>
-                              <input
-                                 type="email"
-                                 name="email"
-                                 id="email"
-                                 required
-                                 class="w-full h-12 border-2 border-gray-200 p-4"
-                              />
+                        <div class="input_container">
+                           <div class="form_input">
+                              <label for="email">Email</label>
+                              <input type="email" name="email" id="email" required class="input_field" />
                            </div>
 
-                           <div class="form_input flex flex-col space-y-2">
-                              <label for="password" class="text-lg font-semibold">Password</label>
-                              <input
-                                 type="password"
-                                 name="password"
-                                 id="password"
-                                 required
-                                 class="w-full h-12 border-2 border-gray-200 p-4"
-                              />
+                           <div class="form_input">
+                              <label for="password">Password</label>
+                              <input type="password" name="password" id="password" required class="input_field" />
                            </div>
 
-                           <div class="form_radio flex items-center justify-between">
-                              <div class="flex items-center space-x-2">
+                           <div class="form_checkbox">
+                              <div class="checkbox">
                                  <input type="checkbox" name="remember_me" id="radio_btn" />
                                  <label for="radio_btn">Remember me</label>
                               </div>
                               <a href="#">Forgot Password?</a>
                            </div>
 
-                           <div class="form_btn cursor-pointer text-white text-center text-lg py-3 bg-black">
+                           <div class="form_submit_btn">
                               <button type="submit">Sign In</button>
-                           </div>
-
-                           <div class="form_p text-lg text-gray-600">
-                              <a href="#" class="block font-thin">Create account</a>
                            </div>
                         </div>
                      </form>
+
+                     <div class="form_p mt-2 text-lg text-gray-600">
+                        <a href="#">Create account</a>
+                     </div>
 
                      <div
                         class="text-white cursor-pointer flex space-x-4 justify-center items-center mt-8 text-center text-lg py-2 border border-r-gray-300 bg-[#FF1500]"
@@ -128,13 +116,11 @@
                         <button type="submit">Login with Google</button>
                      </div>
 
-                     <div class="google_login cursor-pointer rounded-lg mx-20 bg-[#4285F4] mt-10">
-                        <div class="g_logo flex space-x-3 items-center">
-                           <div class="logo border-2 border-[#4285F4] rounded-lg bg-white py-2 px-6">
-                              <img src="./img/google.png" alt="Google" class="w-6 h-full rounded-sm block" />
-                           </div>
-                           <span class="text-white text-center px-4"> Sign in with Google</span>
+                     <div class="google_login_btn">
+                        <div class="g_logo_container">
+                           <img src="./img/google.png" alt="Google" class="g_logo" />
                         </div>
+                        <span class=""> Sign in with Google</span>
                      </div>
                   </div>
                </div>

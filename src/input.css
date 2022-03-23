@@ -19,6 +19,10 @@
 /*---------------------------------------- Components  Layer Custom Design-----------------------------------*/
 @layer components {
    /* Common Components */
+   .page_title {
+      @apply w-full sm:text-center pt-8 text-5xl;
+   }
+
    .title {
       @apply text-4xl text-center p-2 font-semibold;
    }
@@ -161,4 +165,48 @@
 
 .payment_icons {
    @apply flex flex-row space-x-2;
+}
+
+/* ----------------------------- Sign Up/Login Page Design---------------------------- */
+.auth_page_content {
+   @apply flex flex-col sm:mx-auto max-w-[400px];
+}
+.form_container {
+   @apply pt-8;
+}
+
+.input_container {
+   @apply flex flex-col space-y-8;
+}
+
+.form_input {
+   @apply flex flex-col space-y-2 text-lg font-semibold;
+}
+
+.input_field {
+   @apply w-full h-12 border-2 border-gray-200 p-4;
+}
+
+.form_checkbox {
+   @apply flex items-center justify-between;
+}
+
+.checkbox {
+   @apply flex items-center space-x-2;
+}
+
+.form_submit_btn {
+   @apply cursor-pointer text-white text-center text-lg py-3 bg-black;
+}
+
+.google_login_btn {
+   @apply text-white text-center cursor-pointer rounded-lg mx-20 bg-[#4285F4] mt-10 flex space-x-3 items-center;
+}
+
+.g_logo_container {
+   @apply border-2 border-[#4285F4] rounded-lg bg-white py-2 px-6;
+}
+
+.g_logo {
+   @apply w-6 h-full rounded-sm block;
 }
