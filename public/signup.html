@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      <!-- ICONS -->
+      <script src="https://kit.fontawesome.com/a2c234ef4d.js" crossorigin="anonymous"></script>
+      <!-- STYLES/CSS files -->
+      <link rel="stylesheet" href="./output.css" />
+      <title>Memekar | Signup</title>
+   </head>
+   <body>
+      <!-- Header Contents -->
+      <header id="header">
+         <!-- Top Bar -->
+         <div class="top_bar">
+            <span> ⚡️ आमच्या सारखे आम्हीच ⚡️ </span>
+         </div>
+
+         <!-- Navbar / Navigation Menu -->
+         <nav class="bg-white border-t-2 border-b-2 border-black">
+            <div class="container nav_content">
+               <div class="left_content hidden lg:block">
+                  <a href="./index.html" class="nav_link">Home</a>
+                  <a href="#" class="nav_link">Shop</a>
+                  <a href="./colab.html" class="nav_link">Collab <i class="fas fa-angle-down"></i> </a>
+               </div>
+
+               <div class="middle_content">
+                  <div class="nav_logo w-24">
+                     <img src="./img/logo.png" class="block" alt="LOGO" />
+                  </div>
+               </div>
+
+               <div class="last_content hidden lg:block">
+                  <div class="nav_icons ml-4">
+                     <a href="./login.html" class="nav_link">Login</a>
+                     <a href="./signup.html" class="nav_link active_link">Signup</a>
+                     <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-search"></i></a>
+                     <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-heart"></i></a>
+                     <a href="#" class="p-2 hover:text-red-700"> <i class="fas fa-shopping-cart"></i></a>
+                  </div>
+               </div>
+               <!-- Mobile Menu Button -->
+               <div class="lg:hidden menu_btns">
+                  <span
+                     id="menu_btn"
+                     onclick="openNav()"
+                     class="cursor-pointer hover:text-text-green transition-all duration-300 focus:text-text-green"
+                     >&#9776;
+                  </span>
+                  <a href="javascript:void(0)" onclick="closeNav()" id="cross_btn" class="text-5xl hidden">&times;</a>
+               </div>
+
+               <!--Mobile menu content-->
+               <div class="overlay" id="mobileNav">
+                  <div class="overlay_content container">
+                     <a onclick="closeNav()" class="nav_link" href="#header">Home</a>
+                     <a onclick="closeNav()" class="nav_link" href="#featured">Shop</a>
+                     <a onclick="closeNav()" class="nav_link" href="#team">Collab</a>
+                     <a onclick="closeNav()" class="nav_link" href="#skill">Login</a>
+                     <a onclick="closeNav()" class="nav_link" href="#portfolio">Signup</a>
+                     <a onclick="closeNav()" class="nav_link" href="#testimonial"><i class="fas fa-shopping-cart"></i></a>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <!-- Main contents / page contents -->
+      <main>
+         <!-- Signup Section -->
+         <section class="py-4">
+            <div class="container">
+               <div class="flex flex-col sm:mx-auto max-w-[400px]">
+                  <div class="w-full sm:text-center pt-8">
+                     <h2 class="text-5xl">Create Account</h2>
+                  </div>
+                  <div class="sginup_form pt-8">
+                     <form action="#" method="post">
+                        <div class="input_container flex flex-col space-y-8">
+                           <div class="form_input flex flex-col space-y-2">
+                              <label for="email" class="text-lg font-semibold">Email Address</label>
+                              <input
+                                 type="email"
+                                 name="email"
+                                 id="email"
+                                 required
+                                 class="w-full h-12 border-2 border-gray-200 p-4"
+                              />
+                           </div>
+
+                           <div class="form_input flex flex-col space-y-2">
+                              <label for="mobile" class="text-lg font-semibold">Mobile No</label>
+                              <input
+                                 type="number"
+                                 name="mobile"
+                                 id="mobile"
+                                 required
+                                 class="w-full h-12 border-2 border-gray-200 p-4"
+                              />
+                           </div>
+
+                           <div class="form_input flex flex-col space-y-2">
+                              <label for="first_name" class="text-lg font-semibold">First Name</label>
+                              <input
+                                 type="text"
+                                 name="first_name"
+                                 id="first_name"
+                                 required
+                                 class="w-full h-12 border-2 border-gray-200 p-4"
+                              />
+                           </div>
+
+                           <div class="form_input flex flex-col space-y-2">
+                              <label for="last_name" class="text-lg font-semibold">Last Name</label>
+                              <input
+                                 type="text"
+                                 name="last_name"
+                                 id="last_name"
+                                 required
+                                 class="w-full h-12 border-2 border-gray-200 p-4"
+                              />
+                           </div>
+
+                           <div class="form_input flex flex-col space-y-2">
+                              <label for="password" class="text-lg font-semibold">Password</label>
+                              <input
+                                 type="password"
+                                 name="password"
+                                 id="password"
+                                 required
+                                 class="w-full h-12 border-2 border-gray-200 p-4"
+                              />
+                           </div>
+
+                           <div class="privacy_para text-center">
+                              <p>
+                                 By clicking Agree & Sign Up, you agree to the MemekarStore
+                                 <span class="text-red-600">Terms</span> and <span class="text-red-600">Privacy Policy</span>.
+                              </p>
+                           </div>
+
+                           <div class="form_btn cursor-pointer text-white text-center text-lg py-3 bg-black">
+                              <button type="submit">Agree & Sign Up</button>
+                           </div>
+                        </div>
+                     </form>
+
+                     <div
+                        class="bg-[#FF1500] text-white cursor-pointer flex space-x-4 justify-center items-center mt-8 text-center text-lg py-2 border border-r-gray-300"
+                     >
+                        <i class="fab fa-google text-3xl"></i>
+                        <button type="submit">Login with Google</button>
+                     </div>
+
+                     <div class="google_login cursor-pointer rounded-lg mx-20 bg-[#4285F4] mt-10">
+                        <div class="g_logo flex space-x-3 items-center">
+                           <div class="logo border-2 border-[#4285F4] rounded-lg bg-white py-2 px-4">
+                              <img src="./img/google.png" alt="Google" class="w-6 h-full rounded-sm block" />
+                           </div>
+                           <span class="text-white text-center px-2"> Sign in with Google</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!-- FOOTER SECTION -->
+      <footer class="bg-zinc-800 mt-12">
+         <div class="container py-14">
+            <div class="f_content px-10 flex flex-col space-y-4 items-center">
+               <div class="f_logo w-36">
+                  <img src="./img/logo_white.png" alt="" />
+               </div>
+               <div class="f_links text-gray-300">
+                  <a href="#" class="f_link">Contact Us</a>
+                  <a href="#" class="f_link">Terms And Privacy Policy</a>
+                  <a href="#" class="f_link">Shipping & Tracking</a>
+                  <a href="#" class="f_link">Size Guide</a>
+                  <a href="#" class="f_link">Return & Replacement</a>
+                  <a href="#" class="f_link">Our Story </a>
+               </div>
+               <div class="f_icons text-gray-300">
+                  <a href="#" class="f_link"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="f_link"><i class="fab fa-instagram"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="f_last border-t-[1px] border-zinc-700">
+            <div
+               class="container flex flex-col space-y-4 items-center justify-center lg:flex-row lg:space-y-0 lg:justify-between"
+            >
+               <p class="text-gray-500 text-sm">© 2020 Memekar. Media. — Store -- All rights reserved</p>
+               <div class="payment_icons flex space-x-2">
+                  <a href="#">
+                     <img src="./img/mastercard.svg" alt="" />
+                  </a>
+
+                  <a href="#">
+                     <img src="./img/visa.svg" alt="" />
+                  </a>
+
+                  <a href="#">
+                     <img src="./img/amex.svg" alt="" />
+                  </a>
+
+                  <a href="#">
+                     <img src="./img/paypal.svg" alt="" />
+                  </a>
+                  <a href="#">
+                     <img src="./img/maestro.svg" alt="" />
+                  </a>
+                  <a href="#">
+                     <img src="./img/klarna.svg" alt="" />
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- JS -->
+      <script src="./main.js"></script>
+   </body>
+</html>

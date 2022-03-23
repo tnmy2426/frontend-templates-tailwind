@@ -9,25 +9,23 @@
       <script src="https://kit.fontawesome.com/a2c234ef4d.js" crossorigin="anonymous"></script>
       <!-- STYLES/CSS files -->
       <link rel="stylesheet" href="./output.css" />
-      <title>Memekar Store</title>
+      <title>Memekar | Shop</title>
    </head>
    <body>
       <!-- Header Contents -->
-      <header>
+      <header id="header">
          <!-- Top Bar -->
-         <div class="bg-primary_clr">
-            <div class="container text-center">
-               <span class="py-2 block"> ⚡️ आमच्या सारखे आम्हीच ⚡️ </span>
-            </div>
+         <div class="top_bar">
+            <span> ⚡️ आमच्या सारखे आम्हीच ⚡️ </span>
          </div>
 
          <!-- Navbar / Navigation Menu -->
          <nav class="bg-white border-t-2 border-b-2 border-black">
             <div class="container nav_content">
                <div class="left_content hidden lg:block">
-                  <a href="./index.html" class="nav_link active_link">Home</a>
-                  <a href="./shop.html" class="nav_link">Shop</a>
-                  <a href="./colab.html" class="nav_link">Collab <i class="fas fa-angle-down"></i> </a>
+                  <a href="./index.html" class="nav_link">Home</a>
+                  <a href="#featured" class="nav_link">Shop</a>
+                  <a href="#" class="nav_link">Collab <i class="fas fa-angle-down"></i> </a>
                </div>
 
                <div class="middle_content">
@@ -38,18 +36,34 @@
 
                <div class="last_content hidden lg:block">
                   <div class="nav_icons ml-4">
-                     <a href="#login" class="nav_link">Login</a>
-                     <a href="#signup" class="nav_link">Signup</a>
+                     <a href="./login.html" class="nav_link active_link">Login</a>
+                     <a href="./signup.html" class="nav_link">Signup</a>
                      <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-search"></i></a>
                      <a href="#" class="p-2 hover:text-red-700"><i class="fas fa-heart"></i></a>
                      <a href="#" class="p-2 hover:text-red-700"> <i class="fas fa-shopping-cart"></i></a>
                   </div>
                </div>
                <!-- Mobile Menu Button -->
-               <div class="lg:hidden text-3xl font-bold">
-                  <span class="cursor-pointer menu-button hover:text-text-green transition-all duration-300 focus:text-text-green"
-                     >&#9776;</span
-                  >
+               <div class="lg:hidden menu_btns">
+                  <span
+                     id="menu_btn"
+                     onclick="openNav()"
+                     class="cursor-pointer hover:text-text-green transition-all duration-300 focus:text-text-green"
+                     >&#9776;
+                  </span>
+                  <a href="javascript:void(0)" onclick="closeNav()" id="cross_btn" class="text-5xl hidden">&times;</a>
+               </div>
+
+               <!--Mobile menu content-->
+               <div class="overlay" id="mobileNav">
+                  <div class="overlay_content container">
+                     <a onclick="closeNav()" class="nav_link" href="#header">Home</a>
+                     <a onclick="closeNav()" class="nav_link" href="#featured">Shop</a>
+                     <a onclick="closeNav()" class="nav_link" href="#team">Collab</a>
+                     <a onclick="closeNav()" class="nav_link" href="#skill">Login</a>
+                     <a onclick="closeNav()" class="nav_link" href="#portfolio">Signup</a>
+                     <a onclick="closeNav()" class="nav_link" href="#testimonial"><i class="fas fa-shopping-cart"></i></a>
+                  </div>
                </div>
             </div>
          </nav>
@@ -57,217 +71,130 @@
 
       <!-- Main contents / page contents -->
       <main>
-         <!-- Category Section -->
-         <section class="bg-primary_clr py-8 border-b-2 border-black">
-            <div class="title">
-               <h2>Featured</h2>
-            </div>
-            <div class="container py-14">
-               <div class="featured_content_layout">
-                  <div class="card">
-                     <div class="add_to_cart_snippet">
-                        <a href="#"><i class="fas fa-plus"></i></a>
-                     </div>
-                     <div class="card_img">
-                        <img src="https://memekarstore.com/media/snskar_grey.jpg" alt="T-Shirt" />
-                     </div>
-                     <div class="card_body">
-                        <h3 class="text-lg">Sansakr aahet ha T-Shirt | संस्कार आहेत हं आमच्यावर टी शर्ट</h3>
-                        <div class="ratings">
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <span>( 97 )</span>
-                        </div>
-                        <div class="price pt-2">
-                           <strike class="text-gray-600"> ₹499.0</strike>
-                           <span class="ml-2">₹399.0</span>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="card">
-                     <div class="add_to_cart_snippet">
-                        <a href="#"><i class="fas fa-plus"></i></a>
-                     </div>
-                     <div class="card_img">
-                        <img src="https://memekarstore.com/media/snskar_grey.jpg" alt="T-Shirt" />
-                     </div>
-                     <div class="card_body">
-                        <h3 class="text-lg">Sansakr aahet ha T-Shirt | संस्कार आहेत हं आमच्यावर टी शर्ट</h3>
-                        <div class="ratings">
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <span>( 97 )</span>
-                        </div>
-                        <div class="price pt-2">
-                           <strike class="text-gray-600"> ₹499.0</strike>
-                           <span class="ml-2">₹399.0</span>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="card">
-                     <div class="add_to_cart_snippet">
-                        <a href="#"><i class="fas fa-plus"></i></a>
-                     </div>
-                     <div class="card_img">
-                        <img src="https://memekarstore.com/media/snskar_grey.jpg" alt="T-Shirt" />
-                     </div>
-                     <div class="card_body">
-                        <h3 class="text-lg">Sansakr aahet ha T-Shirt | संस्कार आहेत हं आमच्यावर टी शर्ट</h3>
-                        <div class="ratings">
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <span>( 97 )</span>
-                        </div>
-                        <div class="price pt-2">
-                           <strike class="text-gray-600"> ₹499.0</strike>
-                           <span class="ml-2">₹399.0</span>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="card">
-                     <div class="add_to_cart_snippet">
-                        <a href="#"><i class="fas fa-plus"></i></a>
-                     </div>
-                     <div class="card_img">
-                        <img src="https://memekarstore.com/media/snskar_grey.jpg" alt="T-Shirt" />
-                     </div>
-                     <div class="card_body">
-                        <h3 class="text-lg">Sansakr aahet ha T-Shirt | संस्कार आहेत हं आमच्यावर टी शर्ट</h3>
-                        <div class="ratings">
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <span>( 97 )</span>
-                        </div>
-                        <div class="price pt-2">
-                           <strike class="text-gray-600"> ₹499.0</strike>
-                           <span class="ml-2">₹399.0</span>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="card">
-                     <div class="add_to_cart_snippet">
-                        <a href="#"><i class="fas fa-plus"></i></a>
-                     </div>
-                     <div class="card_img">
-                        <img src="https://memekarstore.com/media/snskar_grey.jpg" alt="T-Shirt" />
-                     </div>
-                     <div class="card_body">
-                        <h3 class="text-lg">Sansakr aahet ha T-Shirt | संस्कार आहेत हं आमच्यावर टी शर्ट</h3>
-                        <div class="ratings">
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <span>( 97 )</span>
-                        </div>
-                        <div class="price pt-2">
-                           <strike class="text-gray-600"> ₹499.0</strike>
-                           <span class="ml-2">₹399.0</span>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="card">
-                     <div class="add_to_cart_snippet">
-                        <a href="#"><i class="fas fa-plus"></i></a>
-                     </div>
-                     <div class="card_img">
-                        <img src="https://memekarstore.com/media/snskar_grey.jpg" alt="T-Shirt" />
-                     </div>
-                     <div class="card_body">
-                        <h3 class="text-lg">Sansakr aahet ha T-Shirt | संस्कार आहेत हं आमच्यावर टी शर्ट</h3>
-                        <div class="ratings">
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <span>( 97 )</span>
-                        </div>
-                        <div class="price pt-2">
-                           <strike class="text-gray-600"> ₹499.0</strike>
-                           <span class="ml-2">₹399.0</span>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="card">
-                     <div class="add_to_cart_snippet">
-                        <a href="#"><i class="fas fa-plus"></i></a>
-                     </div>
-                     <div class="card_img">
-                        <img src="https://memekarstore.com/media/snskar_grey.jpg" alt="T-Shirt" />
-                     </div>
-                     <div class="card_body">
-                        <h3 class="text-lg">Sansakr aahet ha T-Shirt | संस्कार आहेत हं आमच्यावर टी शर्ट</h3>
-                        <div class="ratings">
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <span>( 97 )</span>
-                        </div>
-                        <div class="price pt-2">
-                           <strike class="text-gray-600"> ₹499.0</strike>
-                           <span class="ml-2">₹399.0</span>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="card">
-                     <div class="add_to_cart_snippet">
-                        <a href="#"><i class="fas fa-plus"></i></a>
-                     </div>
-                     <div class="card_img">
-                        <img src="https://memekarstore.com/media/snskar_grey.jpg" alt="T-Shirt" />
-                     </div>
-                     <div class="card_body">
-                        <h3 class="text-lg">Sansakr aahet ha T-Shirt | संस्कार आहेत हं आमच्यावर टी शर्ट</h3>
-                        <div class="ratings">
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <span>( 97 )</span>
-                        </div>
-                        <div class="price pt-2">
-                           <strike class="text-gray-600"> ₹499.0</strike>
-                           <span class="ml-2">₹399.0</span>
-                        </div>
-                     </div>
-                  </div>
+         <!-- Featured Section -->
+         <section id="featured" class="py-4">
+            <div class="container">
+               <div class="title">
+                  <h1>Featured</h1>
                </div>
-            </div>
+               <div class="featured_content_layout">
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product1.png" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
+                  </div>
 
-            <div class="container pb-10 pt-4">
-               <div class="pagination">
-                  <div class="prev_page paging">
-                     <p>Previous Page</p>
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product2.jpg" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
                   </div>
-                  <div class="currnt_page paging">
-                     <p>2</p>
+
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product3.jpg" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
                   </div>
-                  <div class="next_page paging">
-                     <p>Next page</p>
+
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product4.jpg" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
+                  </div>
+
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product3.jpg" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
+                  </div>
+
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product1.png" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
+                  </div>
+
+                  <div class="f_product_card">
+                     <div class="f_p_card_img relative">
+                        <img src="./img/product2.jpg" alt="" />
+                        <div class="hover_icons absolute bottom-5 inset-x-0 text-center">
+                           <div class="h_icons text-xl">
+                              <a href="#" class="mr-2"><i class="fas fa-eye"></i></a>
+                              <a href="#"><i class="fas fa-heart"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="fp_card_content flex flex-col space-y-1 pt-2">
+                        <span class="font-semibold text-gray-400">Badge</span>
+                        <h3 class="text-lg font-medium">Roj Khelnar Cricket Badge | रोज खेळणार क्रिकेट बॅज</h3>
+                        <span class="text-red-600 font-medium">₹49.0</span>
+                     </div>
                   </div>
                </div>
             </div>
@@ -275,15 +202,13 @@
       </main>
 
       <!-- FOOTER SECTION -->
-      <footer class="bg-white">
-         <div class="container my-4 py-8">
-            <div class="f_content">
-               <div class="f_logo">
-                  <a href="#">
-                     <img src="./img/logo.png" alt="LOGO" />
-                  </a>
+      <footer class="bg-zinc-800 mt-12">
+         <div class="container py-14">
+            <div class="f_content px-10 flex flex-col space-y-4 items-center">
+               <div class="f_logo w-36">
+                  <img src="./img/logo_white.png" alt="" />
                </div>
-               <div class="f_links">
+               <div class="f_links text-gray-300">
                   <a href="#" class="f_link">Contact Us</a>
                   <a href="#" class="f_link">Terms And Privacy Policy</a>
                   <a href="#" class="f_link">Shipping & Tracking</a>
@@ -291,36 +216,38 @@
                   <a href="#" class="f_link">Return & Replacement</a>
                   <a href="#" class="f_link">Our Story </a>
                </div>
-               <div class="f_icons">
+               <div class="f_icons text-gray-300">
                   <a href="#" class="f_link"><i class="fab fa-facebook"></i></a>
                   <a href="#" class="f_link"><i class="fab fa-instagram"></i></a>
                </div>
             </div>
          </div>
-         <div class="border-t-[1px] border-black bg-primary_clr">
-            <div class="container f_last">
-               <p class="text-gray-700 text-sm">© 2020 Memekar. Media. — Store -- All rights reserved</p>
-               <div class="payment_icons">
+         <div class="f_last border-t-[1px] border-zinc-700">
+            <div
+               class="container flex flex-col space-y-4 items-center justify-center lg:flex-row lg:space-y-0 lg:justify-between"
+            >
+               <p class="text-gray-500 text-sm">© 2020 Memekar. Media. — Store -- All rights reserved</p>
+               <div class="payment_icons flex space-x-2">
                   <a href="#">
-                     <img src="{% static 'img/mastercard.svg' %}" alt="" />
+                     <img src="./img/mastercard.svg" alt="" />
                   </a>
 
                   <a href="#">
-                     <img src="{% static 'img/visa.svg' %}" alt="" />
+                     <img src="./img/visa.svg" alt="" />
                   </a>
 
                   <a href="#">
-                     <img src="{% static 'img/amex.svg' %}" alt="" />
+                     <img src="./img/amex.svg" alt="" />
                   </a>
 
                   <a href="#">
-                     <img src="{% static 'img/paypal.svg' %}" alt="" />
+                     <img src="./img/paypal.svg" alt="" />
                   </a>
                   <a href="#">
-                     <img src="{% static 'img/maestro.svg' %}" alt="" />
+                     <img src="./img/maestro.svg" alt="" />
                   </a>
                   <a href="#">
-                     <img src="{% static 'img/klarna.svg' %}" alt="" />
+                     <img src="./img/klarna.svg" alt="" />
                   </a>
                </div>
             </div>
